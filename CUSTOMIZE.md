@@ -376,6 +376,7 @@ GitHub restricts the default `GITHUB_TOKEN` from triggering other workflows when
 ### How to set up the PAT
 
 1. **Create a Personal Access Token**
+
    - Go to [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens).
    - Click "Generate new token" (classic or fine-grained).
    - Grant at least the following permissions:
@@ -383,6 +384,7 @@ GitHub restricts the default `GITHUB_TOKEN` from triggering other workflows when
    - Save the token somewhere safe.
 
 2. **Add the PAT as a repository secret**
+
    - Go to your repository on GitHub.
    - Navigate to `Settings` > `Secrets and variables` > `Actions` > `New repository secret`.
    - Name the secret `PAT` (must match the name used in the workflow).
