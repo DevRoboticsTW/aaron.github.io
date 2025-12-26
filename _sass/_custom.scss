@@ -1,0 +1,28 @@
+/* Make the embed wider and maintain aspect ratio */
+figure.video-wide {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+  iframe {
+    width: 100% !important;
+    aspect-ratio: 16 / 9;
+    height: auto !important;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Handle the nested figure from video.liquid */
+  figure {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}
+
+/* Ensure the caption looks good */
+figure.video-wide figcaption {
+  margin-top: 1rem;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
